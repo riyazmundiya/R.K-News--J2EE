@@ -1,0 +1,760 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width:100%;height:auto;
+
+}
+body
+{
+    background-color: #2d2b2b;
+    
+    
+    
+
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 100000;
+    background-color: #2d2b2b;
+    
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-style: double;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    color: #fbd3d3;
+    font-family: Dancing Script; 
+    font-style: italic;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-style: Times New Roman;
+    
+ 
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    text-transform: uppercase;
+    
+    
+}
+header ul li a
+{
+    position: relative;
+  
+    margin: 0 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    text-align: center;
+    font-style: bold;
+    color: white;
+    font-size: 20px;
+    
+}
+
+header ul li a:hover
+{
+    color: wheat;
+}
+
+/*Content*/
+
+.middle h2
+{
+    color: #f1f1f1;
+    padding: 18px 350px 0;
+    margin: 40px 50px 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Droid Serif"; 
+}
+.pic
+{
+    background-color: #2d2b2b;
+    text-align: center;
+   
+  
+    
+}
+
+
+
+
+/*newspaper */
+
+.newspaper 
+{
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 150px;
+    
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.newspaper h2
+{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+.newspaper
+{
+    padding: 50px;
+    margin: 50px;
+}
+
+
+.flip-card {
+   
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-style: double;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.flip-card-back h1
+{
+    padding: 30px;
+    font-size: 60px;
+}
+  
+.flip-card-back h1:hover
+{
+    color: wheat;
+    
+}
+
+/*Footer*/
+.footer
+{
+    
+    padding: 1px 0 96px;
+    color: black;
+    text-align: center;
+    font-size: large;
+    background-color: #2d2b2b;
+    
+}
+.social-media
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.social-media a
+{
+        display: flex;
+        height: 75px;
+        width: 75px;
+        margin: 0 15px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: #f1f4f7;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15)
+        ,-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0);
+        transition: transform 0.5s;
+}
+.social-media a i
+{
+        font-size: 35px;
+        color: #777;
+        transition: transform 0.5s;
+} 
+.social-media a:hover
+{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                       -0.5px -0.5px 0px  rgba(255, 255, 255, 1),
+                       0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+                       0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transform: translateY(2px);
+}
+.social-media a:hover i
+{
+    transform: scale(0.90);
+}
+.social-media a:hover .fa-facebook
+{
+    color: #3b5998;
+}
+.social-media a:hover .fa-twitter
+{
+    color: #00acee;
+}
+.social-media a:hover .fa-instagram
+{
+    color: #f14843;
+}
+.social-media a:hover .fa-youtube
+{
+    color: #f00;
+}
+.social-media a:hover .fa-whatsapp
+{
+    color: #4fce5d;
+}
+.cr h2{
+    color: whitesmoke;
+    font-family: Gabriola;
+    font-style: regular;
+    font-size: 35px;
+}
+/*Feedback Logo*/
+.feedback-logo 
+{
+    padding: 115px 0 0 0;
+    margin: -277px 432px 2px 30px;
+  
+}
+.feedback-logo img
+{
+    border: orange;
+    border-style: double;  
+}
+.f-l img
+{
+    padding: 120px 900px 0;
+    margin: 11px;
+    height: 300px;
+}
+.date h5
+{
+    margin: 93px 0 0 1192px;
+    color: white;
+    font-size: larger;
+
+}
+/*Feedback Form */
+.box
+{
+    width: 300px;
+    padding: 40px;
+    top: 59%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box input[type = "text"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+
+textarea
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box textarea:focus
+{
+    border-color: greenyellow;
+}
+.box input[type = "submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px 40px;
+    width: 200px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+
+/* Login Form */
+.l_rk
+{
+    padding: 31px 359px 59px 118px;
+    margin: 107px 0px 39px -60px;
+    border-style: double;
+    color: #fbd3d3;
+    font-family: Dancing Script; 
+    font-style: italic;
+    position: absolute;
+}
+.l_rk h3
+{
+    padding: 37px 13px 49px 79px;
+    margin: -10px -280px 81px -50px;
+    font-weight: 400;
+    font-size: 20px;
+    border-style: double;
+    letter-spacing: 2px;
+    color: #fbd3d3;
+}
+.login
+{
+    width: 0px;
+    height: 0px;
+    padding: 52px;
+    margin: 25px 45px 33px 205px; 
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.l_rk img
+{
+    padding: 30px 0px 0px 0px;
+    margin: -50px -240px -25px 20px;
+    height: 180px;
+}
+.l
+{
+     padding: 0px 0px 0px 40px;
+     margin: 0 0 0px 202px;
+}
+.login input[type = "text"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.login input[type = "password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "password"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.login input[type = "email"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "email"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+
+.login input[type = "date"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "date"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.login input[type = "radio"]
+{
+    margin: 8px 0 0 0;
+    display: block;
+   
+    width: 218px;
+   
+    transition: 0.25s;
+}
+.login label
+{
+    display: block;
+    top: 20%;
+    right: 20%;
+    margin: -15px 10px 0px 6px;
+    font-family: Gadugi;
+}
+.login input[type = "submit"]
+{
+   
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    margin: 3px 100px;
+    width: 200px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+
+.dis h1
+{
+    margin: 200px 0 0 600px;
+    color: white;
+}
+
+
+.cat table
+{
+    margin: 10px 0px 100px 200px;
+    color: whitesmoke;
+    border: double;
+    font-size: large;
+    text-decoration: none;
+    
+}
+.cat table td
+{
+   text-align: center;
+   margin: 2px;
+    padding: 60px 449px 30px 427px;
+   
+}
+
+
+.cat a
+{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   text-transform: uppercase;
+}
+.cat a:hover
+{
+  
+   color: wheat;
+  
+   text-transform: uppercase;
+}
+
+.subcat
+{
+    color: whitesmoke;
+    font-size: large;
+}
+
+
+.subcat table
+{
+    margin: 10px 0px 100px 200px;
+    color: whitesmoke;
+    border: double;
+    font-size: large;
+    text-decoration: none;
+    
+}
+.subcat table td
+{
+   text-align: center;
+   margin: 2px;
+    padding: 60px 449px 30px 427px;
+   
+}
+
+
+.subcat a
+{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   text-transform: uppercase;
+}
+.subcat a:hover
+{
+  
+   color: wheat;
+  
+   text-transform: uppercase;
+}
+.news 
+{
+    margin: 0 0 0 -116px;
+   font-size: 25px;
+    color: white;
+}
+.news table
+{
+    margin: 54px 0 28px 0px;
+}
+.news img
+{
+    width: 40%;
+    height: 415px;
+    margin: 0px 0 0 480;
+}
+
+
+
+
+
+/*Edit NewsCategory */
+
+
+.news_view table
+{
+    margin: 150px 0 58px 20px;
+    
+}
+.news_view a
+{
+    text-decoration: none;
+}
+
+.news_view td 
+{
+   
+    padding: 10px 10px 10px 10px;
+   color: white;
+   
+}
+td img
+{
+    height: 500px;
+    width: 100%;
+}
+.news .title
+{
+    padding: 20px 15px 20px 625;
+}
+.news .desc 
+{
+    padding: 5px 60px 0 155;
+   
+}
+.norecord 
+{
+    margin: 100px 0 0 592px;
+    font-size: 50px;
+}
+iframe
+{
+    margin: 25px 0 45px 390px;
+    border: double;
+}
+.re
+{
+    margin: 11px 80px 0 245px;
+    font-size: 50px;
+    color: white;
+    border: double;
+    text-align: center;
+
+}
+marquee
+{
+    
+   
+    font-size: 60px;
+    border: double;
+    
+    
+    
+    
+
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: red;
+    }
+    
+    10% {
+      
+      color: whitesmoke;
+    }
+    
+    20% {
+      
+      color: #e4281b;
+    }
+    
+    30% {
+      
+      color: #e4b3b3;
+    }
+    
+    40% {
+      
+      color: rgb(247, 6, 6);
+    }
+    
+    50% {
+      
+      color: #ee5610;
+    }
+    
+    60% {
+      
+      color: rgb(255, 0, 0);
+    }
+    
+    70% {
+      
+      color: azure;
+    }
+    80% {
+   
+      color: white;
+    }
+    
+    90% {
+   
+      color: #9b0707;
+    }
+    
+    100% {
+      
+      color:red;
+    }
+  }
+
+
+

@@ -1,0 +1,785 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:whitesmoke;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+
+/* Login Form */
+.l_rk
+{
+    padding: 31px 359px 59px 118px;
+    margin: 107px 0px 39px 10px;
+    border-style: double;
+    color: gray;
+    font-family: Dancing Script; 
+    font-style: italic;
+    position: absolute;
+}
+.l_rk h3
+{
+    padding: 37px 13px 49px 79px;
+    margin: -10px -280px 81px -50px;
+    font-weight: 400;
+    font-size: 20px;
+    border-style: double;
+    letter-spacing: 2px;
+    color: black;
+}
+.login
+{
+    width: 0px;
+    height: 0px;
+    padding: 52px;
+    margin: 25px 45px 33px 205px; 
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.l_rk img
+{
+    padding: 21px 21px 22px 0px;
+    margin: -70px -251px -52px 20px;
+    height: 180px;
+}
+.l
+{
+     padding: 0px 0px 0px 40px;
+     margin: 0 0 0px 202px;
+}
+.login input[type = "text"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.login input[type = "password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "password"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.login input[type = "submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    margin: 3px 52px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.login input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+
+
+
+
+/*Content*/
+
+.middle h2
+{
+    color: rgb(204,69,69);
+    padding: 18px 350px 0;
+    margin: 40px 50px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: "Droid Serif"; 
+}
+.pic
+{
+    background-color: #2d2b2b;
+    text-align: center;    
+    margin: 21px -39px 20px 200px;
+}
+.admin h1
+{
+       color: #CC4545;
+       font-family: Dancing Script;
+       text-align: center;
+       font-size: 80px;
+}
+
+/*Category*/
+.cat
+{
+    color: #F5F5F5;    
+    border-style: double;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 180px;
+}
+.cat input[type = "submit"]
+{
+    border: 0;
+    background: rgb(40,167,69);
+    display: block;
+    margin: 10px ;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    font: bolder;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    
+}
+.cat input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+.cat_display
+{
+    border: #f1f1f1;
+    border-style: double;
+    padding: 350px 20px 20px 20px;
+    margin: 8px 20px 19px 22px;
+
+}
+.edit_button
+{
+    text-decoration: none;
+}
+/*Add Category */
+.box
+{
+    width: 300px;
+    padding: 40px;
+    top: 65%;
+    left: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.box input[type = "text"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.box input[type = "file"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "file"]:focus
+{
+    border-color: greenyellow;
+}
+.box input[type = "submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px 108px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px 40px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+.cat_logo h1
+{
+    margin-top: 150px;
+    color: #CC4545;
+    font-family: Dancing Script;
+    text-align: center;
+    font-size: 80px;
+}
+.cat_logo h2
+{
+    margin-top: 20px;
+    color: #CC4545;
+    font-family: Dancing Script;
+    text-align: center;
+    font-size: 45px;
+}
+
+/*Category Display*/
+
+.cat table
+{
+    margin: 18px 0px 0px 0px;
+    padding: 0 0 0 0;
+    color: #262626;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.cat td
+{
+    padding: 30px 22px 12px 35px;
+    text-align: center; 
+
+}
+    /* Edit Category Button*/
+
+td input[type = "button"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px 50px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px 40px;
+    width: 200px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-decoration: none;
+    background:  rgb(220,53,69);
+}
+td input[type = "button"]:focus
+{
+    
+    border-color: greenyellow;
+}
+td .edit input[type = "button"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px 50px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px 40px;
+    width: 200px;
+    outline: none;
+    color: azure;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-decoration: none;
+    background:  rgb(220,53,69);
+}
+td .edit input[type = "button"]:focus
+{
+    
+    border-color: greenyellow;
+}
+
+
+
+select {
+    position: relative;
+    display: inline-block;
+    background-color: #2d2b2b;
+    padding: 3px 25px 6px 20px;
+    font-size: 18px;
+    left: 53%;
+    top: 12%;
+    
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.cat_select
+{
+    padding: 10px 38px;
+    margin: -17px 0px 0px -63px;
+}
+.cat table
+{
+    margin: 0px 10px 0px 0px;
+    color: #262626;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    
+}
+.cat table td
+{
+   padding: 20px 20px 20px 80px;
+    color: #262626;
+    text-align: center;
+    
+}
+label
+{
+    font-size: 20px;
+    color: gray;
+   margin: 30px 0px 1px -72px;
+    
+    
+    
+}
+/*User Data Display */
+.dis
+{
+   margin: 37px 0px 0px 580px;
+    color: #262626;
+} 
+.user_data table
+{
+    margin: 0px 0 20px 206px;
+    
+    color: #262626;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.user td
+{  
+      padding: 20px 17px 20px 16px;
+    text-align: center;
+
+}
+
+.user_contact td
+{  
+      padding: 20px 97px 20px 96px;
+    text-align: center;
+
+}
+ 
+.feedback table
+{
+    margin: 10px 0 20px 201px;
+    
+    color: #262626;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.feedback td
+{  
+      padding: 20px 160px 20px 160px;
+    text-align: center;
+
+}
+.dis_sub
+{
+   margin: 37px 0px 0px 580px;
+    color: #262626;
+} 
+.subcat
+{
+    margin: 0 0 0 100px;
+}
+.subcat form
+{
+    margin: 0px 0 0px 100px;
+}
+table .subcat 
+{
+    margin: 0px 0px 0px 210px;
+    color: #262626;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    
+}
+.subcat td
+{
+    padding: 30px 22px 12px 35px;
+    text-align: center; 
+    
+}
+.subcat td a
+{
+    padding: 30px 22px 12px 35px;
+    text-align: center; 
+    text-decoration: none;
+    
+}
+
+
+.subcat input[type = "submit"]
+{
+    border: 0;
+    background: rgb(40,167,69);
+    display: block;
+    margin: 10px ;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    font: bolder;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-decoration: none;
+    
+}
+.subcat input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+
+.button_go input[type = "submit"]
+{
+    border: 0;
+    background: rgb(40,167,69);
+    display: block;
+    margin: -60px 10px 20px 560px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    font: bolder;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-decoration: none;
+    
+}
+.button_go input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}
+/* News*/
+.news
+{
+    margin: 150px 0 53px 200px;
+}
+.subcat_select
+{
+    margin: 50px 0 0 -68px;
+    padding: 8px 21px 3px 20px;
+    right: 15px;
+}
+
+
+/*Edit NewsCategory */
+.news
+{
+    width: 300px;
+    padding: 40px;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.news input[type = "text"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 120px 0 0 0;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.news input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: greenyellow;
+}
+.news textarea
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s; 
+}
+.news input[type = "file"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.news input[type = "file"]:focus
+{
+    border-color: greenyellow;
+}
+.news input[type = "submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: -10px 108px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 12px 40px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.news input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}    
+.news_logo h1
+{
+    margin-top: 50px ;
+    padding: 0 0 0;
+    color: #CC4545;
+    font-family: Dancing Script;
+    text-align: center;
+    font-size: 80px;
+}
+.news_logo h2
+{
+    margin-top: 20px;
+    color: #CC4545;
+    font-family: Dancing Script;
+    text-align: center;
+    font-size: 45px;
+}
+
+.news_view table
+{
+    margin: 10px 10px 10px 200px;
+    
+}
+.news_view a
+{
+    text-decoration: none;
+}
+
+.news_view td 
+{
+   
+    padding: 5px 10px 10px 10px;
+   
+}
+td img
+{
+    height: 75px;
+    width: 100%;
+}
+
+.add_news input[type = "submit"]
+{
+    border: 0;
+    background: rgb(40,167,69);
+    display: block;
+    margin: 0px 0 0 203px;
+    text-align: center;
+    border: 2px solid #bbb;
+    padding: 14px 18px 18px 16px;
+    font: bolder;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-decoration: none;
+    
+}
+.add_news input[type = "submit"]:focus
+{
+    
+    border-color: greenyellow;
+}   
+.catname_select
+{
+    margin: 30px 0 0 -200px;
+    color: black;
+}
+.norecord 
+{
+    margin: 150px 0 0 540px;
+    font-size: 50px;
+}
+
+.news_view1 table
+{
+    margin: 25px 10px 10px 120px;
+
+}
+.news_view1 a
+{
+    text-decoration: none;
+}
+
+.news_view1 td 
+{
+   
+    padding: 5px 10px 10px 10px;
+   
+}
+a
+{
+    text-decoration: none;
+}
+.cat .live
+{
+    padding: 20px 28px 14px 15px;
+}
+.cat_logo .live
+{
+    margin: -80px;
+}
+.select_cat
+{
+	color: black;
+}
+option
+{
+	color: black;
+}
+
